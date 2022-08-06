@@ -1,0 +1,13 @@
+.section-title {
+  font-family: Titan One, sans-serif;
+  @include fonts(400, 34, 39, 0.04);
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    @include fonts(400, 48, 55, 0.04);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 58, 66, 0.04);
+  }
+}

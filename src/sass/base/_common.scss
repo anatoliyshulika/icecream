@@ -1,0 +1,35 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: DM Sans, sans-serif;
+
+  background-color: var(--white-color);
+}
+
+.section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

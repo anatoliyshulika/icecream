@@ -1,0 +1,13 @@
+.section-uppertitle {
+  font-family: Titan One, sans-serif;
+  @include fonts(400, 18, 21, 0.04);
+  color: var(--title-label-color);
+
+  @media screen and (min-width: 768px) {
+    @include fonts(400, 26, 30, 0.04);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 30, 34, 0.04);
+  }
+}

@@ -1,0 +1,19 @@
+.button-light {
+  padding: 7px 12px;
+  border-radius: 20px;
+  @include fonts(400, 8, 10);
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 23px;
+    border-radius: 20px;
+    @include fonts(400, 14, 18);
+  }
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
