@@ -32,7 +32,7 @@
             margin-right: 4px;
         }
 
-        &__apple {
+        &__apples {
             width: 162px;
             margin-right: 22px;
         }
@@ -48,7 +48,7 @@
             margin-right: 115px;
         }
 
-        &__apple {
+        &__apples {
             width: 317px;
             margin-right: 80px;
         }
@@ -88,7 +88,7 @@
 
 
 @each $advantages in milk,
-apple,
+apples,
 ice {
     .benefits__#{$advantages}::before {
         content: "";
@@ -96,37 +96,19 @@ ice {
         height: 50px;
         background-size: contain;
         background-repeat: no-repeat;
-        // background-image: url('../image/advantages/advantages-m-#{$advantages}.png');
+        background-image: url('../images/advantages/#{$advantages}.png');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            // background-image: url('../image/advantages/advantages-m-#{$advantages}@2x.png');
+        background-image: url('../images/advantages/#{$advantages}@2x.png');
+        }
+
+        @media (min-device-pixel-ratio: 3),
+        (min-resolution: 288dpi),
+        (min-resolution: 3dppx) {
+        background-image: url('../images/advantages/#{$advantages}@3x.png');
         }
     }
-
-    @media screen and (min-width: 768px) {
-
-        @each $advantages in milk,
-        apple,
-        ice {
-            .benefits__#{$advantages}::before {
-                content: "";
-                max-width: 100%;
-                height: 50px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                // background-image: url('../image/advantages/advantages-#{$advantages}.png');
-
-                @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                    // background-image: url('../image/advantages/advantages-#{$advantages}@2x.png');
-                }
-            }
-        }
-    }
-
-
 
 }
