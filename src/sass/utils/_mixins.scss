@@ -1,6 +1,6 @@
 @mixin fonts($fw: 400, $fs: 14, $lh: 16, $ls: 0.03) {
   font-weight: #{$fw};
   font-size: #{$fs}px;
-  line-height: decimal-round($lh / $fs);
+  line-height: #{$lh} / #{$fs};
   letter-spacing: #{$ls}em;
 }
