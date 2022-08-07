@@ -1,0 +1,35 @@
+.btn-dark {
+  @extend %button;
+  width: 63px;
+  height: 24px;
+  border-radius: 20px;
+  @include fonts(400, 8, 10);
+
+  @media screen and (min-width: 1200px) {
+    width: 107px;
+    height: 40px;
+    border-radius: 20px;
+    @include fonts(400, 14, 18);
+  }
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.btn-light {
+  @extend %button;
+  width: 83px;
+  height: 24px;
+  border-radius: 20px;
+  @include fonts(400, 8, 10);
+
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    height: 40px;
+    border-radius: 20px;
+    @include fonts(400, 14, 18);
+  }
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
