@@ -1,12 +1,13 @@
 .gallery{
     padding-top: 0;
     background: linear-gradient(to bottom, #FFF5F6 13.5%, var(--white-color) 13.5%);
+    
     @media screen and (min-width: 768px) {
-        background: linear-gradient(to bottom, #FFF5F6 37%, var(--white-color) 37%);
+        background: linear-gradient(to bottom, #FFF5F6 48%, var(--white-color) 48%);
         }
     
-        @media screen and (min-width: 1200px) {
-        background: linear-gradient(to bottom, #FFF5F6 6%, var(--white-color) 6%);
+    @media screen and (min-width: 1200px) {
+        background: linear-gradient(to bottom, #FFF5F6 18%, var(--white-color) 18%);
         }
 }
 
@@ -21,7 +22,6 @@
 .gallery__list{
     display: flex;
     gap: 2px;
-    justify-items: center;
 
     @media screen and (min-width: 768px) {
         gap: 6px;
@@ -55,9 +55,27 @@
     width: 44px;
     height: 44px;
 
+    // transform: scale(1);
+    // transition: 0.3s var(--timing-function);
+    // filter: grayscale(2);
+
+    // &:hover {
+    // cursor: pointer;
+    // position: relative;
+    // transform: scale(1.5);
+    // filter: grayscale(0);
+    // }
+
+    &--one{
+        // z-index: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     &--four {
     width: 90px;
     height: 90px;
+    // z-index: 10;
             }
 
     @media screen and (min-width: 768px) {
@@ -79,22 +97,59 @@
     height: 283px;
     }
 }
-
-    &--two {
-    margin-top: 27px;
-    }
-
-    &--six{
-    margin-top: 32px;
-    }
-
-    &--eight{
-        margin-top: 21px;
-    }
 }
 
-.gallery__photo--one,
-.gallery__photo--ten{
-    margin-top: auto;
-    margin-bottom: auto;
+.gallery__photo--two{
+    margin-top: 64%;
+
+//     @media screen and (min-width: 768px) {
+//     margin-top: 68px;
+//     }
+    
+//     @media screen and (min-width: 1200px) {
+//     margin-top: 89px;
+// }
+}
+
+.gallery__photo--six{
+margin-top: 70%;
+
+// @media screen and (min-width: 768px) {
+//     margin-top: 75px;
+//     }
+
+// @media screen and (min-width: 1200px){
+//     margin-top: 99px;
+// }
+}
+
+.gallery__photo--eight {
+    margin-top: 49%;
+
+    // @media screen and (min-width: 768px) {
+    // margin-top: 50px;
+    //         }
+
+    // @media screen and (min-width: 1200px) {
+    // margin-top: 67px;
+    // }
+}
+
+.gallery__photo--ten {
+    margin-top: 112%;
+}
+
+.gallery__image{
+    position: relative;
+    z-index: 1;
+
+    transform: scale(1);
+    transition: 0.3s var(--timing-function);
+
+        &:hover,
+        &:focus {
+        cursor: pointer;
+        position: relative;
+        transform: scale(1.5);
+}
 }
