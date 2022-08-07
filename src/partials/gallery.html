@@ -1,7 +1,629 @@
-<h1 class="section-title">Who is who</h1>
-<button class="button-dark">How it’s made?</button>
-<button class="button-light">How it’s made?
-    <svg width="6px" height="10px">
-        <use href="./images/sprite.svg#btn-arrow"></use>
-    </svg>
-</button>
+<section class="gallery section">
+  <div class="gallery__container container">
+    <h2 class="gallery__title visually-hidden">Gallery</h2>
+    <ul class="gallery__list">
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--one">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/1-d.webp    1x,
+              ./images/gallery/1-d@2x.webp 2x,
+              ./images/gallery/1-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/1-d.jpg    1x,
+              ./images/gallery/1-d@2x.jpg 2x,
+              ./images/gallery/1-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/1-t.webp    1x,
+              ./images/gallery/1-t@2x.webp 2x,
+              ./images/gallery/1-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/1-t.jpg    1x,
+              ./images/gallery/1-t@2x.jpg 2x,
+              ./images/gallery/1-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/1-m.webp    1x,
+              ./images/gallery/1-m@2x.webp 2x,
+              ./images/gallery/1-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/1-m.jpg    1x,
+              ./images/gallery/1-m@2x.jpg 2x,
+              ./images/gallery/1-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/1-d.jpg"
+            alt="Морозиво зелене"
+          />
+        </picture>
+      </li>
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--two">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/2-d.webp    1x,
+              ./images/gallery/2-d@2x.webp 2x,
+              ./images/gallery/2-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/2-d.jpg    1x,
+              ./images/gallery/2-d@2x.jpg 2x,
+              ./images/gallery/2-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/2-t.webp    1x,
+              ./images/gallery/2-t@2x.webp 2x,
+              ./images/gallery/2-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/2-t.jpg    1x,
+              ./images/gallery/2-t@2x.jpg 2x,
+              ./images/gallery/2-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/2-m.webp    1x,
+              ./images/gallery/2-m@2x.webp 2x,
+              ./images/gallery/2-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/2-m.jpg    1x,
+              ./images/gallery/2-m@2x.jpg 2x,
+              ./images/gallery/2-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/2-d.jpg"
+            alt="Морозиво жовте"
+          />
+        </picture>
+        <picture class="gallery__photo gallery__photo--three">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/3-d.webp    1x,
+              ./images/gallery/3-d@2x.webp 2x,
+              ./images/gallery/3-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/3-d.jpg    1x,
+              ./images/gallery/3-d@2x.jpg 2x,
+              ./images/gallery/3-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/3-t.webp    1x,
+              ./images/gallery/3-t@2x.webp 2x,
+              ./images/gallery/3-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/3-t.jpg    1x,
+              ./images/gallery/3-t@2x.jpg 2x,
+              ./images/gallery/3-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/3-m.webp    1x,
+              ./images/gallery/3-m@2x.webp 2x,
+              ./images/gallery/3-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/3-m.jpg    1x,
+              ./images/gallery/3-m@2x.jpg 2x,
+              ./images/gallery/3-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/3-d.jpg"
+            alt="Морозиво рожеве"
+          />
+        </picture>
+      </li>
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--four">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/4-d.webp    1x,
+              ./images/gallery/4-d@2x.webp 2x,
+              ./images/gallery/4-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/4-d.jpg    1x,
+              ./images/gallery/4-d@2x.jpg 2x,
+              ./images/gallery/4-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/4-t.webp    1x,
+              ./images/gallery/4-t@2x.webp 2x,
+              ./images/gallery/4-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/4-t.jpg    1x,
+              ./images/gallery/4-t@2x.jpg 2x,
+              ./images/gallery/4-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/4-m.webp    1x,
+              ./images/gallery/4-m@2x.webp 2x,
+              ./images/gallery/4-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/4-m.jpg    1x,
+              ./images/gallery/4-m@2x.jpg 2x,
+              ./images/gallery/4-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/4-d.jpg"
+            alt="Морозиво з смородиною"
+          />
+        </picture>
+        <picture class="gallery__photo gallery__photo--five">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/5-d.webp    1x,
+              ./images/gallery/5-d@2x.webp 2x,
+              ./images/gallery/5-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/5-d.jpg    1x,
+              ./images/gallery/5-d@2x.jpg 2x,
+              ./images/gallery/5-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/5-t.webp    1x,
+              ./images/gallery/5-t@2x.webp 2x,
+              ./images/gallery/5-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/5-t.jpg    1x,
+              ./images/gallery/5-t@2x.jpg 2x,
+              ./images/gallery/5-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/5-m.webp    1x,
+              ./images/gallery/5-m@2x.webp 2x,
+              ./images/gallery/5-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/5-m.jpg    1x,
+              ./images/gallery/5-m@2x.jpg 2x,
+              ./images/gallery/5-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/5-d.jpg"
+            alt="дівчина з морозивом"
+          />
+        </picture>
+      </li>
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--six">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/6-d.webp    1x,
+              ./images/gallery/6-d@2x.webp 2x,
+              ./images/gallery/6-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/6-d.jpg    1x,
+              ./images/gallery/6-d@2x.jpg 2x,
+              ./images/gallery/6-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/6-t.webp    1x,
+              ./images/gallery/6-t@2x.webp 2x,
+              ./images/gallery/6-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/6-t.jpg    1x,
+              ./images/gallery/6-t@2x.jpg 2x,
+              ./images/gallery/6-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/6-m.webp    1x,
+              ./images/gallery/6-m@2x.webp 2x,
+              ./images/gallery/6-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/6-m.jpg    1x,
+              ./images/gallery/6-m@2x.jpg 2x,
+              ./images/gallery/6-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/6-d.jpg"
+            alt="Морозиво десерт"
+          />
+        </picture>
+        <picture class="gallery__photo gallery__photo--seven">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/7-d.webp    1x,
+              ./images/gallery/7-d@2x.webp 2x,
+              ./images/gallery/7-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/7-d.jpg    1x,
+              ./images/gallery/7-d@2x.jpg 2x,
+              ./images/gallery/7-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/7-t.webp    1x,
+              ./images/gallery/7-t@2x.webp 2x,
+              ./images/gallery/7-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/7-t.jpg    1x,
+              ./images/gallery/7-t@2x.jpg 2x,
+              ./images/gallery/7-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/7-m.webp    1x,
+              ./images/gallery/7-m@2x.webp 2x,
+              ./images/gallery/7-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/7-m.jpg    1x,
+              ./images/gallery/7-m@2x.jpg 2x,
+              ./images/gallery/7-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/7-d.jpg"
+            alt="Морозиво коричневе"
+          />
+        </picture>
+      </li>
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--eight">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/8-d.webp    1x,
+              ./images/gallery/8-d@2x.webp 2x,
+              ./images/gallery/8-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/8-d.jpg    1x,
+              ./images/gallery/8-d@2x.jpg 2x,
+              ./images/gallery/8-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/8-t.webp    1x,
+              ./images/gallery/8-t@2x.webp 2x,
+              ./images/gallery/8-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/8-t.jpg    1x,
+              ./images/gallery/8-t@2x.jpg 2x,
+              ./images/gallery/8-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/8-m.webp    1x,
+              ./images/gallery/8-m@2x.webp 2x,
+              ./images/gallery/8-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/8-m.jpg    1x,
+              ./images/gallery/8-m@2x.jpg 2x,
+              ./images/gallery/8-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/8-d.jpg"
+            alt="Морозиво з песиком"
+          />
+        </picture>
+        <picture class="gallery__photo gallery__photo--nine">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/9-d.webp    1x,
+              ./images/gallery/9-d@2x.webp 2x,
+              ./images/gallery/9-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/9-d.jpg    1x,
+              ./images/gallery/9-d@2x.jpg 2x,
+              ./images/gallery/9-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/9-t.webp    1x,
+              ./images/gallery/9-t@2x.webp 2x,
+              ./images/gallery/9-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/9-t.jpg    1x,
+              ./images/gallery/9-t@2x.jpg 2x,
+              ./images/gallery/9-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/9-m.webp    1x,
+              ./images/gallery/9-m@2x.webp 2x,
+              ./images/gallery/9-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/9-m.jpg    1x,
+              ./images/gallery/9-m@2x.jpg 2x,
+              ./images/gallery/9-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/9-d.jpg"
+            alt="Морозиво шейк"
+          />
+        </picture>
+      </li>
+      <li class="gallery__column">
+        <picture class="gallery__photo gallery__photo--ten">
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/10-d.webp    1x,
+              ./images/gallery/10-d@2x.webp 2x,
+              ./images/gallery/10-d@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/gallery/10-d.jpg    1x,
+              ./images/gallery/10-d@2x.jpg 2x,
+              ./images/gallery/10-d@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/10-t.webp    1x,
+              ./images/gallery/10-t@2x.webp 2x,
+              ./images/gallery/10-t@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/gallery/10-t.jpg    1x,
+              ./images/gallery/10-t@2x.jpg 2x,
+              ./images/gallery/10-t@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/10-m.webp    1x,
+              ./images/gallery/10-m@2x.webp 2x,
+              ./images/gallery/10-m@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/10-m.jpg    1x,
+              ./images/gallery/10-m@2x.jpg 2x,
+              ./images/gallery/10-m@3x.jpg 3x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/10-d.jpg"
+            alt="Морозиво тістечко"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
