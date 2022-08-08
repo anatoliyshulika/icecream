@@ -117,6 +117,8 @@ h6 {
   --milkshakes-color: #c2e297;
   --second-text-color: #907e82;
   --bg-color: #fff5f6;
+  --card-border-color: #e1e1e1;
+  --icon-fill-color: #fea5bb;
 }
 
 body {
@@ -177,7 +179,7 @@ body {
   pointer-events: none;
 }
 
-.section-uppertitle {
+.section-uppertitle, .footer__slogan--start {
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -186,7 +188,7 @@ body {
   color: var(--title-label-color);
 }
 @media screen and (min-width: 768px) {
-  .section-uppertitle {
+  .section-uppertitle, .footer__slogan--start {
     font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
@@ -194,7 +196,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-uppertitle {
+  .section-uppertitle, .footer__slogan--start {
     font-weight: 400;
     font-size: 30px;
     line-height: 1.13;
@@ -202,7 +204,7 @@ body {
   }
 }
 
-.section-title {
+.section-title, .footer__slogan--end {
   font-family: Titan One, sans-serif;
   font-weight: 400;
   font-size: 34px;
@@ -211,7 +213,7 @@ body {
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .section-title {
+  .section-title, .footer__slogan--end {
     font-weight: 400;
     font-size: 48px;
     line-height: 1.15;
@@ -219,7 +221,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-title {
+  .section-title, .footer__slogan--end {
     font-weight: 400;
     font-size: 58px;
     line-height: 1.14;
@@ -369,11 +371,19 @@ body {
 
 .footer {
   background-color: var(--bg-color);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer__slogan--start {
+  margin-bottom: 16px;
+}
+.footer__slogan--end {
+  margin-bottom: 40px;
 }
 
 .socials {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin-bottom: 40px;
 }
 .socials__item:not(:last-child) {
@@ -381,5 +391,38 @@ body {
 }
 
 .socials__icon {
-  fill: #FEA5BB;
+  fill: var(--icon-fill-color);
+}
+
+.footer__contact {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.81;
+  text-align: right;
+  color: var(--black-color);
+  margin-bottom: 40px;
+}
+
+.footer__tel {
+  color: var(--accent-color);
+}
+
+.footer__rights {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid var(--card-border-color);
+}
+
+.footer__rights-desc {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--second-text-color);
+  padding-top: 16px;
+  padding-right: 3px;
 }/*# sourceMappingURL=index.css.map */

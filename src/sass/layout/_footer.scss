@@ -1,10 +1,22 @@
 .footer {
     background-color: var(--bg-color);
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__slogan--start {
+        @extend .section-uppertitle;
+        margin-bottom: 16px;
+    }
+
+    &__slogan--end {
+        @extend .section-title;
+        margin-bottom: 40px;
+    }
 }
 
 .socials {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 40px;
 
     &__item:not(:last-child) {
@@ -13,5 +25,38 @@
 }
 
 .socials__icon {
-    fill: #FEA5BB;
+    fill: var(--icon-fill-color);
+}
+
+.footer__contact {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.81;
+    text-align: right;
+    color: var(--black-color);
+    margin-bottom: 40px;
+}
+
+.footer__tel {
+    color: var(--accent-color);
+}
+
+.footer__rights {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid var(--card-border-color);
+}
+
+.footer__rights-desc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--second-text-color);
+    padding-top: 16px;
+    padding-right: 3px;
 }
