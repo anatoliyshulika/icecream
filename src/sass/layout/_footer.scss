@@ -1,0 +1,17 @@
+.footer {
+    background-color: var(--bg-color);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    &__item:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+
+.socials__icon {
+    fill: #FEA5BB;
+}
