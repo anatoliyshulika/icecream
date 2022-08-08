@@ -1,3 +1,14 @@
+.contact {
+    padding: 40px 32px;
+    width: 280px;
+    height: 412px;
+
+    background: var(--white-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+
 .contact__title {
     display: flex;
     align-items: center;
@@ -8,13 +19,20 @@
     height: 16px;
     background: var(--ice-coffee-color);
     border-radius: 4px;
+    margin-bottom: 20px;
 
     @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.04);
     color: var(--white-color);
     text-transform: uppercase;
 }
 
-.contact__title--green{
+.contact__list{
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contact__title--green {
     width: 130px;
     background: var(--milkshakes-color);
 }
@@ -22,11 +40,15 @@
 .contact__item--city {
     @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.04);
     color: var(--black-color);
+    margin-bottom: 8px;
 }
 
 .contact__item--text {
     @include fonts($fw: 500, $fs: 12, $lh: 18, $ls: 0.03);
     color: var(--second-text-color);
+    // margin-bottom: 24px;
+    // padding-bottom: 24px;
+    // border-bottom: 1px solid #E1E1E1;
 }
 
 .contact__item--week {
@@ -37,10 +59,13 @@
 .contact__item--time {
     @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.03);
     color: var(--title-label-color);
+    // margin-bottom: 24px;
+    // padding-bottom: 24px;
+    // border-bottom: 1px solid #E1E1E1;
 }
 
-.contact__item-mail, .contact__item-tel {
+.contact__item-mail,
+.contact__item-tel {
     @include fonts($fw: 500, $fs: 12, $lh: 18, $ls: 0.03);
     color: var(--second-text-color);
 }
-
