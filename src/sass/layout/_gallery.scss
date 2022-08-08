@@ -1,13 +1,13 @@
 .gallery{
     padding-top: 0;
-    background: linear-gradient(to bottom, #FFF5F6 13.5%, var(--white-color) 13.5%);
+    background: linear-gradient(to bottom,var(--bg-color) 13.5%, var(--white-color) 13.5%);
     
     @media screen and (min-width: 768px) {
-        background: linear-gradient(to bottom, #FFF5F6 48%, var(--white-color) 48%);
+        background: linear-gradient(to bottom, var(--bg-color) 48%, var(--white-color) 48%);
         }
     
     @media screen and (min-width: 1200px) {
-        background: linear-gradient(to bottom, #FFF5F6 18%, var(--white-color) 18%);
+        background: linear-gradient(to bottom, var(--bg-color) 18%, var(--white-color) 18%);
         }
 }
 
@@ -77,14 +77,6 @@
     // z-index: 10;
             }
     
-    // @media screen and (max-width: 767px) {
-    // &--five {
-    // max-width: 44px;
-    // height: auto;
-    // }
-    // }
-
-
     @media screen and (min-width: 768px) {
     min-width: 105px;
     min-height: 105px;
@@ -103,11 +95,6 @@
     min-width: 283px;
     min-height: 283px;
     }
-
-    // &--five {
-    // width: 138px;
-    // height: 139px;
-    // }
 }
 }
 
