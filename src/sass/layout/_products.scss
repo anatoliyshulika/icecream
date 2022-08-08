@@ -154,22 +154,23 @@
 .products__name::after {
   position: absolute;
   bottom: 268px;
-  left: 127px;
+  left: 137px;
   display: block;
   content: ' ';
-  width: 26px;
+  width: 6px;
   height: 6px;
-  background-color: aliceblue;
-  background-image: url(../images/sprite.svg#arrow-right);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 10px 0px 0px #ffffff, -10px 0px 0px #ffffff;
 
   @media screen and (min-width: 768px) {
     bottom: 294px;
-    left: 99px;
+    left: 109px;
   }
 
   @media screen and (min-width: 1200px) {
     bottom: 298px;
-    left: 171px;
+    left: 181px;
   }
 }
 
