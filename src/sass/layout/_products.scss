@@ -1,0 +1,213 @@
+.section-products__label {
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.section-products__title {
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 281px;
+  }
+}
+
+.products {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    gap: 140px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+
+.products__card {
+  position: relative;
+  height: 489px;
+  padding-top: 160px;
+  padding-bottom: 32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    height: 473px;
+    padding-top: 118px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 535px;
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+
+  &:nth-child(1) {
+    background-color: var(--hero-bg-color);
+  }
+
+  &:nth-child(2) {
+    background-color: var(--ice-coffee-color);
+  }
+
+  &:nth-child(3) {
+    background-color: var(--milkshakes-color);
+  }
+}
+
+.products__card::before {
+  position: absolute;
+  bottom: 349px;
+  left: 0;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 280px;
+
+  @media screen and (min-width: 768px) {
+    bottom: 387px;
+    height: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 402px;
+    height: 394px;
+  }
+}
+
+.products__card:nth-child(1)::before {
+  background-image: url(../images/products/ice-cream-m.png);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/ice-cream-t.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/ice-cream-d.png);
+  }
+}
+
+.products__card:nth-child(2)::before {
+  background-image: url(../images/products/ice-coffee-m.png);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/ice-coffee-t.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/ice-coffee-d.png);
+  }
+}
+
+.products__card:nth-child(3)::before {
+  background-image: url(../images/products/milkshakes-m.png);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/milkshakes-t.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/milkshakes-d.png);
+  }
+}
+
+.products__name {
+  font-family: Titan One;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  @include fonts(400, 20, 23, 0.04);
+  color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 30, 34, 0.04);
+  }
+}
+
+.products__name::after {
+  position: absolute;
+  bottom: 268px;
+  left: 127px;
+  display: block;
+  content: ' ';
+  width: 26px;
+  height: 6px;
+  background-color: aliceblue;
+  background-image: url(../images/sprite.svg#arrow-right);
+
+  @media screen and (min-width: 768px) {
+    bottom: 294px;
+    left: 99px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 298px;
+    left: 171px;
+  }
+}
+
+.products__description {
+  font-family: DM Sans;
+  text-align: center;
+  margin-bottom: 32px;
+  @include fonts(700, 14, 21, 0.04);
+  color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    @include fonts(700, 14, 25, 0.04);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(700, 16, 28, 0.04);
+    margin-bottom: 60px;
+  }
+}
+
+.products__btn {
+  display: block;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+
+  background-color: #fff;
+}
+
+.products__icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #d41443;
+}
