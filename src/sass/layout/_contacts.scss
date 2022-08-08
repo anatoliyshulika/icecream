@@ -1,0 +1,46 @@
+.contact__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 16px;
+    background: var(--ice-coffee-color);
+    border-radius: 4px;
+
+    @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.04);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.contact__title--green{
+    width: 130px;
+    background: var(--milkshakes-color);
+}
+
+.contact__item--city {
+    @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.04);
+    color: var(--black-color);
+}
+
+.contact__item--text {
+    @include fonts($fw: 500, $fs: 12, $lh: 18, $ls: 0.03);
+    color: var(--second-text-color);
+}
+
+.contact__item--week {
+    @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.03);
+    color: var(--black-color);
+}
+
+.contact__item--time {
+    @include fonts($fw: 500, $fs: 12, $lh: 22, $ls: 0.03);
+    color: var(--title-label-color);
+}
+
+.contact__item-mail, .contact__item-tel {
+    @include fonts($fw: 500, $fs: 12, $lh: 18, $ls: 0.03);
+    color: var(--second-text-color);
+}
+
