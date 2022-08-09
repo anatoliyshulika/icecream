@@ -30,11 +30,8 @@
 
 .products {
   display: flex;
-
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    gap: 140px;
-  }
+  flex-wrap: wrap;
+  gap: 140px;
 
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
