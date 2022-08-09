@@ -1,0 +1,13 @@
+%button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+    color: var(--accent-color);
+  }
+}

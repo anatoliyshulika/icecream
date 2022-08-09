@@ -1,0 +1,88 @@
+.cont-btn-dark {
+  @extend %button;
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  @include fonts(700, 16, 21);
+
+  & .icon {
+    margin-left: 1px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    & .icon {
+      margin-left: 6px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 198px;
+    & .icon {
+      margin-left: 6px;
+    }
+  }
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.cont-btn-light {
+  @extend %button;
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  @include fonts(700, 16, 21);
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 168px;
+  }
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
+
+  & .icon {
+    margin-left: 6px;
+  }
+}
+
+.buy-btn {
+  @extend %button;
+  width: 160px;
+  height: 44px;
+  border-radius: 22px;
+  @include fonts(700, 16, 21);
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
+
+  & .icon {
+    margin-left: 6px;
+  }
+}
+
+.buy-menu-btn {
+  @extend %button;
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  @include fonts(700, 16, 21);
+
+  & .icon {
+    margin-left: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+    & .icon {
+      margin-left: 6px;
+    }
+  }
+
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
