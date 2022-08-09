@@ -8,7 +8,6 @@
     display: flex;
     width: 234px;
     flex-wrap: wrap;
-    outline: 1px solid olivedrab;
 
     @media screen and (min-width: 768px) {
         width: 340px;
@@ -25,12 +24,14 @@
         @extend .section-uppertitle;
         margin-bottom: 16px;
         line-height: 1.17;
+        text-transform: uppercase;
     }
 
     &--end {
         @extend .section-title;
         margin-bottom: 40px;
         line-height: 1.15;
+        text-transform: uppercase;
     }
 }
 
@@ -49,6 +50,7 @@
 @media screen and (min-width: 1200px) {
     .footer__slogan--end {
         margin-bottom: 60px;
+        letter-spacing: 0.056em;
     }
 }
 
@@ -77,6 +79,7 @@
 
 .socials__icon {
     fill: var(--icon-fill-color);
+    transition: fill var(--timing-function);
 }
 
 .footer__contact {
@@ -86,20 +89,17 @@
     line-height: 1.81;
     text-align: right;
     color: var(--black-color);
-    outline: 1px solid blueviolet;
 }
 
 .footer__wrap {
 
         @media screen and (min-width: 768px) {
         display: flex;
-        outline: 1px solid green;
     }
 }
 
 .footer__inner {
     margin-bottom: 40px;
-    outline: 1px solid red;
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -137,7 +137,6 @@
     border-top: 1px solid var(--card-border-color);
     padding-top: 16px;
     padding-bottom: 3px;
-    outline: 1px solid orangered;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
