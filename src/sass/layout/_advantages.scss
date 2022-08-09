@@ -1,0 +1,108 @@
+.advantages {
+  padding-top: 0;
+  background-color: var(--bg-color);
+  @include fonts(700, 12, 20, 0);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 64px;
+    @include fonts(700, 14, 24, 0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+    @include fonts(700, 16, 28, 0.02);
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+
+  @media screen and (min-width: 768px) {
+    &__milk {
+      width: 180px;
+      margin-right: 4px;
+    }
+
+    &__apples {
+      width: 162px;
+      margin-right: 22px;
+    }
+
+    &__ice {
+      width: 159px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__milk {
+      width: 288px;
+      margin-right: 115px;
+    }
+
+    &__apples {
+      width: 317px;
+      margin-right: 80px;
+    }
+
+    &__ice {
+      width: 288px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__number {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    @include fonts(400, 36, 41, 0.04);
+    font-family: Titan One, sans-serif;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 36px;
+      margin-bottom: 13px;
+      @include fonts(400, 48, 55, 0.04);
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 40px;
+      margin-bottom: 16px;
+      @include fonts(400, 58, 66, 0.04);
+    }
+  }
+}
+
+@each $advantages in milk, apples, ice {
+  .benefits__#{$advantages}::before {
+    content: '';
+    max-width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/advantages/#{$advantages}.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/#{$advantages}@2x.png');
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/advantages/#{$advantages}@3x.png');
+    }
+  }
+}

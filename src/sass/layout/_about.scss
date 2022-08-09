@@ -1,0 +1,174 @@
+.about {
+  padding-bottom: 40px;
+
+  background-color: var(--bg-color);
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-repeat: no-repeat;
+    background-position: center 236px;
+    background-size: contain;
+    background-image: url(./../images/about/milk-d.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/about/milk-d@2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(./../images/about/milk-d@3x.png);
+    }
+  }
+
+  &__uppertitle {
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 32px;
+      width: 336px;
+      height: 335px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 501px;
+      height: 501px;
+      margin-right: 99px;
+    }
+  }
+
+  &__desc {
+    max-width: 220px;
+    @include fonts(500, 12, 19, 0);
+    color: var(--second-text-color);
+
+    @media screen and (min-width: 768px) {
+      max-width: 334px;
+      @include fonts(500, 14, 25, 0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 463px;
+    }
+  }
+
+  &__desc-a {
+    margin-bottom: 24px;
+    color: var(--black-color);
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 32px;
+      @include fonts(500, 16, 28, 0.04);
+    }
+  }
+
+  &__desc-b {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 27px;
+      @include fonts(500, 14, 27, 0.04);
+    }
+  }
+
+  &__desc-c {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include fonts(500, 14, 27, 0.04);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+
+    @include fonts(700, 14, 18, 0);
+
+    @media screen and (min-width: 768px) {
+      @include fonts(700, 16, 21, 0);
+    }
+  }
+
+  &__btn-icon {
+    margin-left: 13px;
+  }
+
+  &__wrap {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__text-wrap {
+    background-image: url(./../images/about/milk-m.png);
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./../images/about/milk-m@2x.png);
+    }
+
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(./../images/about/milk-m@3x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 90px;
+    }
+  }
+}
