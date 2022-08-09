@@ -1,0 +1,150 @@
+.gallery {
+  padding-top: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--bg-color) 13.5%,
+    var(--white-color) 13.5%
+  );
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-color) 48%,
+      var(--white-color) 48%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      to bottom,
+      var(--bg-color) 18%,
+      var(--white-color) 18%
+    );
+  }
+}
+
+.gallery__container {
+  padding: 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 92px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  gap: 2px;
+
+  @media screen and (min-width: 768px) {
+    gap: 6px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 8px;
+  }
+}
+
+.gallery__column {
+  flex-direction: column;
+  display: flex;
+  gap: 3px;
+
+  @media screen and (min-width: 768px) {
+    gap: 6px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 8px;
+  }
+}
+
+.gallery__image {
+  border-radius: 20%;
+  box-shadow: 9px 8px 7px rgb(127 65 79 / 15%);
+}
+
+.gallery__link--center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.gallery__photo {
+  max-width: 44px;
+
+  &--one {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &--four {
+    min-width: 90px;
+    height: 90px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 105px;
+    min-height: 105px;
+
+    &--four {
+      min-width: 215px;
+      min-height: 215px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 138px;
+    min-height: 139px;
+
+    &--four {
+      min-width: 283px;
+      min-height: 283px;
+    }
+  }
+}
+
+.gallery__link {
+  &--two {
+    margin-top: 64%;
+  }
+
+  &--five {
+    max-width: 44px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 105px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 138px;
+    }
+  }
+}
+
+.gallery__link--six {
+  margin-top: 70%;
+}
+
+.gallery__link--eight {
+  margin-top: 49%;
+}
+
+.gallery__link--ten {
+  margin-top: 112%;
+}
+
+.gallery__image {
+  position: relative;
+  z-index: 1;
+
+  transform: scale(1);
+  transition: 0.3s var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      position: relative;
+      transform: scale(1.5);
+    }
+  }
+}
