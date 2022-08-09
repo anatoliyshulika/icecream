@@ -1,0 +1,52 @@
+<section class="section about">
+  <div class="container about__container">
+    <p class="section-uppertitle about__uppertitle">tradition and love</p>
+    <h2 class="section-title about__title">how it’s made?</h2>
+    <div class="about__wrap">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="
+            ./images/about/cow-d.png    1x,
+            ./images/about/cow-d@2x.png 2x,
+            ./images/about/cow-d@3x.png 3x
+          " type="image/png" />
+
+        <source media="(min-width: 768px)" srcset="
+            ./images/about/cow-t.png    1x,
+            ./images/about/cow-t@2x.png 2x,
+            ./images/about/cow-t@3x.png 3x
+          " type="image/png" />
+
+        <source media="(max-width: 768px)" srcset="
+            ./images/about/cow-m.png    1x,
+            ./images/about/cow-m@2x.png 2x,
+            ./images/about/cow-m@3x.png 3x
+          " type="image/png" />
+
+        <img class="about__img" src="./images/about/cow-m.png" alt="cow with milc" width="501" height="501" />
+      </picture>
+
+      <div class="about__text-wrap">
+        <p class="about__desc about__desc-a">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__desc about__desc-b">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about__desc about__desc-c">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="cont-btn-light about__btn">
+          Read more
+          <svg class="icon about__btn-icon" width="16" height="16">
+            <use href="./images/sprite.svg#btn-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
