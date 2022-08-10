@@ -1,0 +1,51 @@
+.to-top--position {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+
+    @media screen and (min-width: 768px) {
+    bottom: 60px;
+    right: 4%;
+    }
+}
+
+.to-top--style {
+    visibility: hidden;
+
+
+    @include fonts(500, 25);
+    color: var(--accent-color);
+    cursor: pointer;
+    background-color: var(--hero-circle-color);
+    box-shadow: 3px 7px 17px 0px rgb(127 65 79 / 15%);
+    border: none;
+    border-radius: 40%;
+    height: 35px;
+    width: 35px;
+
+
+    animation: movebtn 2s ease-in-out infinite alternate both;
+    transition: all var(--timing-function);
+
+    &:hover,
+    &:focus {
+    animation-play-state: paused;
+    color: var(--black-color);
+    background-color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+
+    @include fonts(500, 35);
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 75px;
+    height: 75px;
+    
+    @include fonts(500, 50);
+    }
+}

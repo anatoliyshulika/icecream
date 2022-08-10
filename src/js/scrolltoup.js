@@ -1,15 +1,20 @@
-const scrollToTopBtn = document.querySelector('.scrollToTopBtn');
+const scrollBtn = document.querySelector(".to-top");
 
-const rootElement = document.documentElement;
-
-const handleScroll = () => {
-  const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-
-  if (rootElement.scrollTop / scrollTotal > 0.25) {
-    scrollToTopBtn.classList.add('isVisible');
-  } else {
-    scrollToTopBtn.classList.remove('isVisible');
-  }
+const btnVisibility = () => {
+    if (window.scrollY > 40) {
+        scrollBtn.style.visibility = "visible";
+    } else {
+        scrollBtn.style.visibility = "hidden";
+    }
 };
 
-document.addEventListener('scroll', handleScroll);
+document.addEventListener("scroll", () => {
+    btnVisibility();
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
