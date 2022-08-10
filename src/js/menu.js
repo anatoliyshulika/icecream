@@ -1,13 +1,15 @@
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
+  const mobileMenuRef = document.querySelector('[data-menu]');
+    const mobileOpen = document.querySelector('[data-open]');
   const menuBtn = document.querySelector('[data-btn-button]');
   const menuBtnAbout = document.querySelector('[data-about-button]');
   const menuBtnHow = document.querySelector('[data-how-button]');
   const menuBtnOur = document.querySelector('[data-our-button]');
   const menuBtnContact = document.querySelector('[data-contact-button]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
 
-  const mobileOpen = document.querySelector('[data-open]');
+
+
 
   menuBtnRef.addEventListener('click', () => {
     const expanded =
