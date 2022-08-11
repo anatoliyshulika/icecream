@@ -1,3 +1,12 @@
+.section--gradient{
+  background-image: linear-gradient(
+  to bottom,
+  #ffffff 20%,
+  #FFF5F6 20%
+);
+}
+
+
 .contacts {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -122,6 +131,13 @@
     margin-top: 5%;
 }
 }
+
+.icon--contact{
+  fill: #ffffff;
+}
+
+
+
 
 // .button-dark {
 //     display: block;
