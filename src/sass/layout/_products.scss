@@ -243,6 +243,7 @@
   transition: transform 250ms linear;
   &.is-open {
     transform: translateY(0);
+    
   }
 }
 
