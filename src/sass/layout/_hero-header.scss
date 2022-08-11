@@ -55,12 +55,14 @@
 
 .header {
   background-color: var(--hero-bg-color);
+  position: relative;
+  overflow: hidden;
   //   margin: 0 auto;
   //   max-width: 320px;
 }
 
 .header__container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     padding-bottom: 158px;
   }
 
@@ -71,13 +73,11 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 84px;
   }
-  position: relative;
   background-position: top 83px left 36px;
   background-size: 346px 344px;
   background-repeat: no-repeat;
-  overflow: hidden;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     background-image: url(../images/hero/ellipse3-m.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -235,15 +235,15 @@
 }
 
 .mobile-menu {
-  position: relative;
+  // position: relative;
   display: block;
   width: 20px;
   height: 12px;
-  z-index: 10;
+  // z-index: 10;
 
   background-color: transparent;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     position: absolute;
     right: 20px;
     top: 27px;
@@ -253,17 +253,17 @@
     display: none;
   }
 
-  &__particle {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    width: 100%;
-    height: 1px;
+  // &__particle {
+  //   position: absolute;
+  //   top: 6px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 1px;
 
-    background-color: var(--accent-color);
+  //   background-color: var(--accent-color);
 
-    transition: transform var(--timing-function);
-  }
+  //   transition: transform var(--timing-function);
+  // }
 
   //   &::before,
   //   &::after {
@@ -308,9 +308,13 @@
     // }
   }
 
-  &.is-open &__particle {
-    transform: scale(0);
-  }
+  // &.is-open &__particle {
+  //   transform: scale(0);
+  // }
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 // .menu-container {
@@ -341,7 +345,7 @@
 
   transform: translateX(100%);
 
-  transition: transform var(--accent-color);
+  transition: transform var(--timing-function);
 
   @media screen and (max-width: 767px) {
     width: 250px;
@@ -390,7 +394,7 @@
   //     background-color: #ecebeb;
   //   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 
@@ -406,9 +410,9 @@
 }
 
 .btn-menu {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  //   display: flex;
   //   justify-content: center;
   //   align-items: center;
   //   align-self: center;
