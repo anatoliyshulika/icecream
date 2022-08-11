@@ -86,7 +86,7 @@
                     <use href="./images/sprite.svg#btn-arrow2"></use>
                 </svg>
             </button>
-            <button class="cont-btn-light" data-modal-open>Franchise
+            <button class="cont-btn-light" data-franchise-button>Franchise
                 <svg class="icon" width="6" height="10">
                     <use href="./images/sprite.svg#btn-arrow"></use>
                 </svg>
@@ -115,9 +115,9 @@
 
     <!-- Franchise -->
 
-    <div class="franchise backdrop is-hidden">
+    <div class="franchise backdrop franchise-is-hidden" franchise-menu>
         <div class="franchise__modal about-modal container">
-            <button class="about-modal__close-btn" type="button" aria-label="button close">
+            <button class="about-modal__close-btn" type="button" aria-label="button close" data-franchise-close>
                 <svg class="franchise__close" width="11px" height="11px">
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
@@ -131,17 +131,17 @@
                         <label class="blank__label" for="name">Full name</label>
                         <input class="blank__input" type="text" name="name" id="name" autocomplete="off" required
                             minlength="2" />
-                            <svg class="blank__icon" width="12" height="12">
-                                <use href="./images/sprite.svg#franchise-mane"></use>
-                            </svg>
+                        <svg class="blank__icon" width="12" height="12">
+                            <use href="./images/sprite.svg#franchise-mane"></use>
+                        </svg>
                     </li>
                     <li class="blank__field">
                         <label class="blank__label" for="tel">Phone</label>
                         <input class="blank__input" type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             required />
-                            <svg class="blank__icon" width="12" height="12">
-                                <use href="./images/sprite.svg#franchise-tel"></use>
-                            </svg>
+                        <svg class="blank__icon" width="12" height="12">
+                            <use href="./images/sprite.svg#franchise-tel"></use>
+                        </svg>
                     </li>
                     <li class="blank__field">
                         <label class="blank__label" for="mail">Email</label>
