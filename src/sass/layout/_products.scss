@@ -236,14 +236,14 @@
   justify-content: center;
   padding-left: 24px;
   padding-right: 24px;
-
+  opacity: 0;
   z-index: 100;
 
   transform: translateY(150%);
   transition: transform 250ms linear;
   &.is-open {
     transform: translateY(0);
-    
+    opacity: 1;
   }
 }
 
