@@ -1,11 +1,6 @@
-.section--gradient{
-  background-image: linear-gradient(
-  to bottom,
-  #ffffff 20%,
-  #FFF5F6 20%
-);
+.section--gradient {
+  background-image: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
 }
-
 
 .contacts {
   display: flex;
@@ -135,12 +130,9 @@
   }
 }
 
-.icon--contact{
-  fill: #ffffff;
-}
-
-
-
+// .icon--contact{
+//   fill: #ffffff;
+// }
 
 // .button-dark {
 //     display: block;
