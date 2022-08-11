@@ -55,6 +55,8 @@
 
 .header {
   background-color: var(--hero-bg-color);
+  position: relative;
+  overflow: hidden;
   //   margin: 0 auto;
   //   max-width: 320px;
 }
@@ -71,11 +73,9 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 84px;
   }
-  position: relative;
   background-position: top 83px left 36px;
   background-size: 346px 344px;
   background-repeat: no-repeat;
-  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     background-image: url(../images/hero/ellipse3-m.png);
