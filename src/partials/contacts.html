@@ -86,7 +86,7 @@
                     <use href="./images/sprite.svg#btn-arrow2"></use>
                 </svg>
             </button>
-            <button class="cont-btn-light">Franchise
+            <button class="cont-btn-light" data-modal-open>Franchise
                 <svg class="icon" width="6" height="10">
                     <use href="./images/sprite.svg#btn-arrow"></use>
                 </svg>
@@ -111,4 +111,73 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Franchise -->
+
+    <div class="franchise backdrop is-hidden">
+        <div class="franchise__modal about-modal container">
+            <button class="about-modal__close-btn" type="button" aria-label="button close">
+                <svg class="franchise__close" width="11px" height="11px">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
+
+            <p class="about-modal__form-text">Become our partner</p>
+
+            <form class="blank">
+                <ul class="blank__list list">
+                    <li class="blank__field">
+                        <label class="blank__label" for="name">Full name</label>
+                        <input class="blank__input" type="text" name="name" id="name" autocomplete="off" required
+                            minlength="2" />
+                            <svg class="blank__icon" width="12" height="12">
+                                <use href="./images/sprite.svg#franchise-mane"></use>
+                            </svg>
+                    </li>
+                    <li class="blank__field">
+                        <label class="blank__label" for="tel">Phone</label>
+                        <input class="blank__input" type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required />
+                            <svg class="blank__icon" width="12" height="12">
+                                <use href="./images/sprite.svg#franchise-tel"></use>
+                            </svg>
+                    </li>
+                    <li class="blank__field">
+                        <label class="blank__label" for="mail">Email</label>
+                        <input class="blank__input" type="email" name="mail" id="mail" required />
+                        <svg class="blank__icon" width="12" height="12">
+                            <use href="./images/sprite.svg#franchise-mail"></use>
+                        </svg>
+                    </li>
+                    <li class="blank__field">
+                        <label label class="blank__label" for="cities">In what city do you plan to start a business with
+                            "IceCream"?</label>
+                        <input class="blank__input" list="city" name="cities" id="cities" required />
+                        <svg class="blank__icon" width="12" height="12">
+                            <use href="./images/sprite.svg#franchise-locacion"></use>
+                        </svg>
+                        <datalist id="city">
+                            <option>Denver</option>
+                            <option>Chicago</option>
+                            <option>Los Angeles</option>
+                            <option>Miami</option>
+                            <option>New York</option>
+                        </datalist>
+                    </li>
+                </ul>
+                <div class="blank__box">
+                    <a class="logo logo--center" href="./index.html"><svg class="logo__icon" width="199" height="50">
+                            <use href="./images/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <button class="cont-btn-dark about-modal__btn blank__button" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 </section>
