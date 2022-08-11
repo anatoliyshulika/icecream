@@ -11,7 +11,7 @@
 }
 
 .to-top--style {
-  //   visibility: hidden;
+  visibility: hidden;
 
   @include fonts(500, 25);
   color: var(--accent-color);
@@ -31,6 +31,7 @@
     animation-play-state: paused;
     color: var(--black-color);
     background-color: var(--accent-color);
+    opacity: 1;
   }
 
   @media screen and (min-width: 768px) {
