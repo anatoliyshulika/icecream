@@ -1,0 +1,18 @@
+.close-btn {
+  position: absolute;
+  top: 20;
+  right: 32;
+  display: block;
+
+  color: var(--white-color);
+  background-color: transparent;
+}
+
+.icon-close {
+  display: block;
+  & use {
+    display: block;
+    width: 14px;
+    height: 14px;
+  }
+}
