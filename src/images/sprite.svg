@@ -17,8 +17,18 @@
 <path fill="#d41443" style="fill: var(--color2, #d41443)" d="M8.629 23.308c0 3.524 1.224 4.229 7.406 4.229s7.406-0.705 7.406-4.229c0-1.538-0.322-2.178-0.966-2.178-0.58 0-0.966 0.577-0.966 1.538 0 3.588-4.894 3.908-5.603 0.384-0.322-1.858-0.515-1.922-3.8-1.922h-3.477v2.178z"></path>
 <path fill="#d41443" style="fill: var(--color2, #d41443)" d="M12.622 30.548c0.386 2.050 6.955 1.858 6.955-0.128 0-0.705-0.837-0.961-3.606-0.961-3.027 0-3.542 0.192-3.349 1.089z"></path>
 </symbol>
-<symbol id="btn-arrow" viewBox="0 0 512 512">
-<path d="M177.372 353.372l45.256 45.256 142.627-142.628-142.628-142.627-45.254 45.254 97.372 97.373z"></path>
+<symbol id="Vector-1" viewBox="0 0 19 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+<symbol id="ellipse1" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
+<symbol id="arrow-right2" viewBox="0 0 32 32">
+<path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+</symbol>
+<symbol id="btn-arrow" viewBox="0 0 6 10">
+<path fill="none" d="M1 1L5 5L1 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></path>
+<!-- <path d="M177.372 353.372l45.256 45.256 142.627-142.628-142.628-142.627-45.254 45.254 97.372 97.373z"></path> -->
 </symbol>
 <symbol id="burger" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color2, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
