@@ -11,7 +11,7 @@
 }
 
 .to-top--style {
-  //   visibility: hidden;
+  visibility: hidden;
 
   @include fonts(500, 25);
   color: var(--accent-color);

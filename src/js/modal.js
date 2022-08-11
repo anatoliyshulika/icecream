@@ -15,23 +15,6 @@
   }
 })();
 
-(() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  a - modal - open;
-  const closeMmenuBtnRef = document.querySelector('[data-menu-close]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
-
-  menuBtnRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    document.body.classList.toggle('menu-open');
-  });
-
-  closeMmenuBtnRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    document.body.classList.toggle('menu-open');
-  });
-})();
-
 // =================== Виталий инфо на морожко=========
 // (() => {
 //   const menuBtnRef = document.querySelector('[data-menu-button1]');
