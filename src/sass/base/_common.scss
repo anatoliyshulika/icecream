@@ -3,8 +3,7 @@
 body {
   font-family: DM Sans, sans-serif;
 
-  // background-color: var(--white-color);
-  background-color: burlywood;
+  background-color: var(--white-color);
 }
 
 .section {
@@ -35,4 +34,12 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.is-noscroll {
+  overflow: hidden;
 }

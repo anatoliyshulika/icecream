@@ -1,46 +1,28 @@
 <section class="section about">
-  <div class="container">
+  <div class="container about__container">
     <p class="section-uppertitle about__uppertitle">tradition and love</p>
     <h2 class="section-title about__title">how it’s made?</h2>
     <div class="about__wrap">
       <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
+        <source media="(min-width: 1200px)" srcset="
             ./images/about/cow-d.png    1x,
             ./images/about/cow-d@2x.png 2x,
             ./images/about/cow-d@3x.png 3x
-          "
-          type="image/png"
-        />
+          " type="image/png" />
 
-        <source
-          media="(min-width: 768px)"
-          srcset="
+        <source media="(min-width: 768px)" srcset="
             ./images/about/cow-t.png    1x,
             ./images/about/cow-t@2x.png 2x,
             ./images/about/cow-t@3x.png 3x
-          "
-          type="image/png"
-        />
+          " type="image/png" />
 
-        <source
-          media="(max-width: 768px)"
-          srcset="
+        <source media="(max-width: 768px)" srcset="
             ./images/about/cow-m.png    1x,
             ./images/about/cow-m@2x.png 2x,
             ./images/about/cow-m@3x.png 3x
-          "
-          type="image/png"
-        />
+          " type="image/png" />
 
-        <img
-          class="about__img"
-          src="./images/about/cow-m.png"
-          alt="cow with milc"
-          width="501"
-          height="501"
-        />
+        <img class="about__img" src="./images/about/cow-m.png" alt="cow with milc" width="501" height="501" />
       </picture>
 
       <div class="about__text-wrap">
@@ -58,9 +40,9 @@
         <p class="about__desc about__desc-c">
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button class="cont-btn-light about__btn">
+        <button class="cont-btn-light about__btn" data-modal-open>
           Read more
-          <svg class="icon about__btn-icon" width="16" height="16">
+          <svg class="icon about__btn-icon" width="6" height="10">
             <use href="./images/sprite.svg#btn-arrow"></use>
           </svg>
         </button>
@@ -68,3 +50,34 @@
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="about-modal container">
+    <button class="about-modal__close-btn" type="button" data-modal-close>
+      <svg class="icon" width="16" height="16">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <strong class="section-uppertitle about-modal__title">we made it with love</strong>
+    <p class="about-modal__text">
+      We have a simple and unwavering focus at the heart of everything we do: To
+      create products of unquestionably high quality and flavour.
+    </p>
+    <p class="about-modal__text">
+      This decadent range is based on a perfect balance of fresh creamy whole
+      milk, real jersey or double cream, rich butter and the finest quality
+      fruits. Whilst the natural flavours used in our Classic Range offer a
+      traditional, everyday alternative, without compromising on quality.
+    </p>
+
+    <strong class="about-modal__form-text">subscribe to the news</strong>
+    <form class="about-modal__form">
+      <label class="about-modal__form-group">
+        <input class="about-modal__form-field" type="email" name="email" placeholder="E-mail" required />
+      </label>
+
+      <button class="cont-btn-dark about-modal__btn" type="submit">join</button>
+    </form>
+  </div>
+</div>

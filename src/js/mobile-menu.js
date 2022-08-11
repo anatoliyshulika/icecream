@@ -1,5 +1,6 @@
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
+  a - modal - open;
   const closeMmenuBtnRef = document.querySelector('[data-menu-close]');
   const mobileMenuRef = document.querySelector('[data-menu]');
 
