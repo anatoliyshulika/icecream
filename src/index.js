@@ -1,6 +1,9 @@
-// import './js/counter';
-// import './js/mobile-menu';
+import './js/mobile-menu';
 import './js/modal';
 import './js/scroll';
 import './js/scrolltoup';
-import './js/menu';
+import './js/our-location';
+import './js/ice-menu1';
+import './js/ice-menu2';
+import './js/ice-menu3';
+import './js/franchise';

@@ -1,16 +1,24 @@
 (() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  a - modal - open;
-  const closeMmenuBtnRef = document.querySelector('[data-menu-close]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
+  const refs = {
+    openModalBtn: document.querySelector('[data-menu-button]'),
+    closeModalBtn: document.querySelector('[data-menu-close]'),
+    closeAboutBtn: document.querySelector('[about-close]'),
+    closehowBtn: document.querySelector('[how-close]'),
+    closeproductsBtn: document.querySelector('[products-close]'),
+    closecontactsBtn: document.querySelector('[contacts-close]'),
+    modal: document.querySelector('[data-menu]'),
+    noscroll: document.querySelector('[menu-open]'),
+  };
 
-  menuBtnRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    document.body.classList.toggle('menu-open');
-  });
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.closeAboutBtn.addEventListener('click', toggleModal);
+  refs.closehowBtn.addEventListener('click', toggleModal);
+  refs.closeproductsBtn.addEventListener('click', toggleModal);
+  refs.closecontactsBtn.addEventListener('click', toggleModal);
 
-  closeMmenuBtnRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    document.body.classList.toggle('menu-open');
-  });
+  function toggleModal() {
+    refs.modal.classList.toggle('is-open');
+    refs.noscroll.classList.toggle('menu-open');
+  }
 })();

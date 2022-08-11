@@ -4,22 +4,24 @@
   height: 44px;
   border-radius: 22px;
   @include fonts(700, 16, 21);
+  margin-bottom: 10px;
 
   & .icon {
-    margin-left: 10px;
+    margin: -6px;
+    margin-left: 1px;
   }
 
   @media screen and (min-width: 768px) {
     width: 191px;
     & .icon {
-      margin-left: 16px;
+      margin-left: 6px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     width: 198px;
     & .icon {
-      margin-left: 16px;
+      margin-left: 6px;
     }
   }
 

@@ -3,19 +3,26 @@
     <p class="section-products__label section-uppertitle">100% natural</p>
     <h2 class="section-products__title section-title">products</h2>
     <ul class="products animate__animated animate__shakeX">
-      <li
-        class="products__card products__ice-cream animate__animated animate__swing"
-      >
+      <li class="products__card products__ice-cream animate__animated animate__swing">
         <h3 class="products__name">ice cream</h3>
         <p class="products__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="products__btn" type="button" aria-label="Read more">
+        <button class="products__btn" type="button" data-menu-button1>
           <svg class="products__icon">
             <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
+        <div class="ice-compound milk" data-menu1>
+          <ol class="ice-compound__list ">
+            <li>milk</li>
+            <li>butter</li>
+            <li>sugar</li>
+            <li>Strawberry</li>
+            <li>mint</li>
+          </ol>
+        </div>
       </li>
       <li class="products__card products__ice-coffee">
         <h3 class="products__name">ice coffee</h3>
@@ -23,23 +30,41 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="products__btn" type="button" aria-label="Read more">
+        <button class="products__btn" type="button" data-menu-button2>
           <svg class="products__icon">
             <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
+        <div class="ice-compound coffee" data-menu2>
+          <ol class="ice-compound__list">
+            <li>milk</li>
+            <li>butter</li>
+            <li>sugar</li>
+            <li>coffee</li>
+            <li>ice</li>
+          </ol>
+        </div>
       </li>
-      <li class="products__card products__milkshakes">
+      <li class="products__card products__milkshakes animate__animated animate__swing">
         <h3 class="products__name">milkshakes</h3>
         <p class="products__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="products__btn" type="button" aria-label="Read more">
+        <button class="products__btn" type="button" data-menu-button3>
           <svg class="products__icon">
             <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
+        <div class="ice-compound shakes" data-menu3>
+          <ol class="ice-compound__list ">
+            <li>milk</li>
+            <li>butter</li>
+            <li>sugar</li>
+            <li>chocolate</li>
+            <li>cocoa</li>
+          </ol>
+        </div>
       </li>
     </ul>
   </div>
