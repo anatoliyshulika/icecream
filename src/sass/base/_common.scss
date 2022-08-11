@@ -35,3 +35,11 @@ body {
     padding-right: 16px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.is-noscroll {
+  overflow: hidden;
+}
