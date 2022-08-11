@@ -54,6 +54,7 @@
         position: absolute;
         top: 30px;
         left: 56px;
+        z-index: 1;
 
         @media screen and(min-width: 768px) {
             top: 10px;
@@ -87,6 +88,7 @@
 .cr__text {
     padding-right: 4px;
     padding-left: 19px;
+    z-index: 20;
 
     @media screen and(min-width:768px) {
         width: 514px;
@@ -162,7 +164,7 @@
     list-style: none;
 }
 
-.slider .slick-dots button {
+.slick-dots li button {
     font-size: 0;
     width: 12px;
     height: 12px;
@@ -172,13 +174,31 @@
     margin: 0px 10px;
 }
 
-.slick-active button {
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 0;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    /* <-- Вот этот символ */
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slider .slick-dots .slick-active button {
     width: 100%;
     background-color: var(--white-color);
     background: url(/src/images/customer-reviews/hause.svg) 0 0 no-repeat;
     overflow: hidden;
-    width: 12px;
-    height: 10px;
+    width: 17px;
+    height: 13px;
 }
 
 .slick-dots .slick-active button {
