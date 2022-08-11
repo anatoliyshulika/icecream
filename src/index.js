@@ -7,3 +7,4 @@ import './js/ice-menu1';
 import './js/ice-menu2';
 import './js/ice-menu3';
 import './js/franchise';
+import './js/burghide';

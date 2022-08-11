@@ -240,7 +240,7 @@
   z-index: 100;
 
   transform: translateY(150%);
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
   &.is-open {
     transform: translateY(0);
     opacity: 1;
