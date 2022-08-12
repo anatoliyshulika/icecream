@@ -1,7 +1,7 @@
 const scrollBtn = document.querySelector(".to-top");
 
 const btnVisibility = () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 50) {
         scrollBtn.style.visibility = "visible";
     } else {
         scrollBtn.style.visibility = "hidden";
