@@ -3,65 +3,14 @@
   --main-font-weight: 700;
 }
 
-// * {
-//   outline: 1px solid red;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p {
-//     margin: 0;
-// }
-
-// .header ul,
-// .header ol {
-//     margin: 0;
-//     padding-left: 0;
-// }
-
-// .header img {
-//     max-width: 100%;
-// }
-
-// .header body {
-//     font-size: 16px;
-//     line-height: 1.3125;
-//     color: var(--white-color);
-
-//     @media screen and (max-width: 767px) {
-//         &.menu-open {
-//             overflow: hidden;
-//         }
-//     }
-// }
-
-// .header__section {
-//   @media screen and (max-width: 767px) {
-//     padding-bottom: 158px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     padding-bottom: 56px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     padding-bottom: 84px;
-//   }
-// }
-
 .header {
   background-color: var(--hero-bg-color);
   position: relative;
   overflow: hidden;
-  //   margin: 0 auto;
-  //   max-width: 320px;
 }
 
 .header__container {
+  position: relative;
   @media screen and (max-width: 768px) {
     padding-bottom: 158px;
   }
@@ -94,7 +43,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // max-width: 768px;
     background-position: top 43px right 185px;
     background-size: 335px 333px;
     background-image: url(../images/hero/ellipse3-t.png);
@@ -114,7 +62,6 @@
 
   @media screen and (min-width: 1200px) {
     background-position: top 54px right 149px;
-    // max-width: 1200px;
     background-size: 534px 534px;
     background-image: url(../images/hero/ellipse3-d.png);
 
@@ -163,34 +110,6 @@
   }
 }
 
-// @media screen and (max-width: 1199px) {
-//     .nav {
-//       display: none;
-//     }
-
-//   .nav__item {
-//     padding: 12px 0;
-
-//     border-top: 1px solid #e18298;
-//     border-bottom: 1px solid #e18298;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .nav {
-//     margin-left: 128px;
-
-//     &__list {
-//       display: flex;
-//       align-items: center;
-//     }
-
-//     &__item:not(:last-child) {
-//       margin-right: 35px;
-//     }
-//   }
-// }
-
 .nav__link {
   font-family: var(--main-font), sans-serif;
   font-weight: var(--main-font-weight);
@@ -235,11 +154,9 @@
 }
 
 .mobile-menu {
-  // position: relative;
   display: block;
   width: 20px;
   height: 12px;
-  // z-index: 10;
 
   background-color: transparent;
 
@@ -253,39 +170,6 @@
     display: none;
   }
 
-  // &__particle {
-  //   position: absolute;
-  //   top: 6px;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 1px;
-
-  //   background-color: var(--accent-color);
-
-  //   transition: transform var(--timing-function);
-  // }
-
-  //   &::before,
-  //   &::after {
-  //     content: '';
-  //     position: absolute;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 1px;
-  //     background-color: var(--accent-color);
-
-  //     transition: background-color 0ms cubic-bezier(0.4, 0, 0.2, 1),
-  //       transform var(--accent-color);
-  //   }
-
-  //   &::before {
-  //     top: 0;
-  //   }
-
-  //   &::after {
-  //     bottom: 0;
-  //   }
-
   &.is-open {
     margin-right: 0;
 
@@ -294,44 +178,14 @@
       right: 32px;
       top: 27px;
     }
-
-    // &::before {
-    //   top: 5.5px;
-    //   transform: rotate(45deg);
-    //   background-color: var(--white-color);
-    // }
-
-    // &::after {
-    //   bottom: 5.5px;
-    //   transform: rotate(-45deg);
-    //   background-color: var(--white-color);
-    // }
   }
-
-  // &.is-open &__particle {
-  //   transform: scale(0);
-  // }
 }
 
 .menu-open {
   overflow: hidden;
 }
 
-// .menu-container {
-//   @media screen and (min-width: 1200px) {
-//     display: none;
-//   }
-
-//     &.is-open {
-//       @media screen and (min-width: 1200px) {
-//         display: none;
-//       }
-//     }
-// }
-
 .menu-container {
-  //   display: flex;
-  // flex-direction: column;
   z-index: 5;
 
   position: absolute;
@@ -364,47 +218,16 @@
   transform: translateX(0);
 }
 
-// .mobile-menu.is-open ~ .menu-container {
-//   transform: translateX(0);
-// }
-
 .btn {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   height: 44px;
-
-  //   background: #ffffff;
-  //   border-radius: 22px;
-  //   border-color: transparent;
-
-  //   font-family: var(--main-font), sans-serif;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 1.3125;
-  //   color: #d41443;
-  //   cursor: pointer;
-
-  //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: #ecebeb;
-  //   }
-
   @media screen and (max-width: 768px) {
     display: none;
   }
 
   @media screen and (min-width: 768px) {
-    // width: 160px;
     z-index: 1;
   }
 
   @media screen and (min-width: 1200px) {
-    // width: 159px;
     margin-left: auto;
   }
 }
@@ -413,54 +236,15 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  //   justify-content: center;
-  //   align-items: center;
-  //   align-self: center;
-
-  //   height: 44px;
-
-  //   background: #ffffff;
-  //   border-radius: 22px;
-  //   border-color: transparent;
-
-  //   font-family: var(--main-font), sans-serif;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 1.3125;
-  //   color: #d41443;
-  //   cursor: pointer;
-
-  //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: #ecebeb;
-  //   }
 
   @media screen and (max-width: 767px) {
-    // width: 100%;
-    // max-width: 210px;
     margin-bottom: 19px;
   }
 
   @media screen and (min-width: 768px) {
-    // width: 186px;
     margin-bottom: 20px;
   }
 }
-
-// .btn__icon {
-//   margin-left: 28px;
-
-//   @media screen and (min-width: 768px) {
-//     margin-left: 21px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-left: 12px;
-//   }
-// }
 
 .hero__box {
   @media screen and (min-width: 768px) {
@@ -784,4 +568,9 @@
   @media screen and (min-width: 1200px) {
     right: 16px;
   }
+}
+
+.burg-hide,
+.buy-hide {
+  display: none;
 }
